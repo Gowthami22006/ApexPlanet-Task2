@@ -18,12 +18,10 @@ A modern and responsive Login and Registration interface for secure user authent
 
 ## Screenshot
 
-Add your screenshot file (for example `screenshot.png`) to the repository and use:
-
 ```markdown
 ![Login Page](screenshot.png)
 ```
 
 ## Author
 
-Your Name
+GOWTHAMI MOOLINTI
