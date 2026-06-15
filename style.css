@@ -1,0 +1,203 @@
+/* Custom Typography Configurations */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --theme-navy-dark: #0a1128;
+    --theme-navy-light: #1c2541;
+    --theme-gold: #d4af37;
+    --theme-gold-hover: #bda030;
+    --text-muted-light: #f8fafc; /* Brightened for accessibility compliance */
+    --input-icon-color: #a1a1aa; /* Increased visibility of utility status nodes */
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(rgba(10, 17, 40, 0.76), rgba(10, 17, 40, 0.76)), 
+                url('image_2f4000.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Glassmorphism Structural Framework Wrapper */
+.main-container {
+    max-width: 840px;
+    width: 100%;
+    min-height: 540px;
+    background: rgba(10, 17, 40, 0.88) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+/* Side Display Graphics Layout Panels */
+.left-graphic-side {
+    background: linear-gradient(135deg, var(--theme-navy-dark) 0%, var(--theme-navy-light) 100%);
+    position: relative;
+    border-right: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.logo-icon-circle {
+    width: 64px;
+    height: 64px;
+    background-color: var(--theme-navy-dark);
+    color: var(--theme-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgba(212, 175, 55, 0.2);
+    border: 2px solid var(--theme-gold);
+}
+
+.left-graphic-side .graphic-content h2.branding-title {
+    color: var(--theme-gold);
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid var(--theme-gold);
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+/* Clean Info Frame Padding Real Estate */
+.brand-description {
+    color: var(--text-muted-light);
+    line-height: 1.6;
+    max-width: 340px;
+    background: rgba(10, 17, 40, 0.65);
+    padding: 20px 24px; 
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Footer Element Tracking Coordinates */
+.graphic-footer {
+    margin-top: auto;
+    padding-top: 2rem;
+}
+
+/* Top Level Form Toggle Segment Navigation Bar */
+.form-toggle-container {
+    background-color: rgba(10, 17, 40, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.form-toggle-container .btn {
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #94a3b8 !important;
+    transition: all 0.25s ease-in-out;
+}
+
+.form-toggle-container .active-login-tab,
+.form-toggle-container .active-register-tab {
+    background: linear-gradient(135deg, var(--theme-gold) 0%, #f4d068 100%) !important;
+    color: var(--theme-navy-dark) !important;
+    font-weight: 700 !important;
+    box-shadow: 0px 4px 12px rgba(212, 175, 55, 0.35);
+}
+
+/* Enhanced Contrast Field Forms Controls */
+.custom-input-field {
+    background-color: rgba(10, 17, 40, 0.5) !important;
+    border: 1px solid rgba(212, 175, 55, 0.25) !important;
+    color: #ffffff !important;
+    padding-top: 0.58rem;
+    padding-bottom: 0.58rem;
+}
+
+.custom-input-field::placeholder {
+    color: #94a3b8 !important; /* Brighter placeholders for accessibility */
+}
+
+.custom-input-addon {
+    background-color: rgba(28, 37, 65, 0.5) !important;
+    border: 1px solid rgba(212, 175, 55, 0.25) !important;
+    color: var(--input-icon-color) !important; /* Brighter icon symbols */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+}
+
+.form-control:focus {
+    border-color: var(--theme-gold) !important;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2) !important;
+}
+
+/* Micro Formatting Utilities */
+.label-mini {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.text-mini {
+    font-size: 0.82rem;
+}
+
+.mt-2.5 {
+    margin-top: 0.65rem !important; /* Micro shift to give inputs breathing room */
+}
+
+.text-light-muted {
+    color: #94a3b8;
+}
+
+.mini-error {
+    font-size: 0.75rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-pointer:hover i {
+    color: var(--theme-gold) !important;
+}
+
+/* Interactive Button Assemblies */
+.btn-theme, .btn-gold {
+    background: linear-gradient(135deg, var(--theme-gold) 0%, #e5c158 100%);
+    color: var(--theme-navy-dark);
+    border: none;
+    padding: 0.65rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn-theme:hover, .btn-gold:hover {
+    background: var(--theme-gold-hover);
+    color: var(--theme-navy-dark);
+    transform: translateY(-1px);
+}
+
+.theme-link {
+    color: var(--theme-gold);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.theme-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.modal-dark-theme {
+    background-color: var(--theme-navy-light);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+/* Smooth Navigation Form Slider Motion Profiles */
+.auth-form {
+    animation: formPanelSlideIn 0.3s ease-out forwards;
+}
+
+@keyframes formPanelSlideIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
